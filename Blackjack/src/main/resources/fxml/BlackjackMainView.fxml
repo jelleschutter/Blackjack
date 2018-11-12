@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.blackjack.controller.BlackjackMainViewController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/popup_background.png" />
+         </image>
+      </ImageView>
+      
+      <Pane layoutX="131.0" layoutY="25.0" onMouseDragged="#onPaneDragged" onMousePressed="#onPanePressed" prefHeight="140.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d24e1f" height="50.0" layoutX="83.0" layoutY="57.0" stroke="#9a291e" strokeType="INSIDE" strokeWidth="6.0" width="380.0" />
+            <Label layoutX="96.0" layoutY="67.0" text="Balance:" textFill="#fff568">
+               <font>
+                  <Font name="Perpetua" size="24.0" />
+               </font></Label>
+            <Label fx:id="lblBalance" layoutX="205.0" layoutY="67.0" prefHeight="29.0" prefWidth="247.0" textFill="#fff568">
+               <font>
+                  <Font name="Perpetua" size="24.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="521.0" layoutY="33.0" text="Blackjack" textAlignment="CENTER" textFill="#fff568">
+               <font>
+                  <Font name="Perpetua" size="72.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="50.0" layoutX="1057.0" layoutY="49.0" onMouseClicked="#nextTutorialImage" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_toolbar.png" />
+               </image>
+            </ImageView>
+            <Label disable="true" layoutX="1071.0" layoutY="31.0" prefHeight="88.0" prefWidth="9.0" style="-fx-opacity: 1;" text="?" textFill="#ffd454">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fitHeight="84.0" fitWidth="50.0" layoutX="1180.0" layoutY="48.0" onMouseClicked="#exit" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="50.0" layoutX="1120.0" layoutY="48.0" onMouseClicked="#minimize" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="1132.0" layoutY="25.0" prefHeight="88.0" prefWidth="9.0" style="-fx-opacity: 1;" text="-" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="1193.0" layoutY="9.0" prefHeight="119.0" prefWidth="44.0" style="-fx-opacity: 1;" text="x" textFill="#ffd454">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="562.0" layoutX="357.0" layoutY="349.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <image>
+            <Image url="@../images/box_526x66.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="562.0" layoutX="359.0" layoutY="425.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <image>
+            <Image url="@../images/box_526x66.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="562.0" layoutX="359.0" layoutY="501.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <image>
+            <Image url="@../images/box_526x197.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="359.0" layoutY="356.0" minWidth="456.0" prefHeight="52.0" prefWidth="456.0" text="BLACKJACK PAYS 3 TO 2" textFill="#fff568" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <font>
+            <Font name="Perpetua" size="41.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="359.0" layoutY="432.0" minWidth="562.0" prefHeight="52.0" prefWidth="562.0" text="INSURANCE PAYS 2 TO 1" textFill="#fff568" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <font>
+            <Font name="Perpetua" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="197.0" fitWidth="562.0" layoutX="359.0" layoutY="143.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <image>
+            <Image url="@../images/box_526x197.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="359.0" layoutY="509.0" minWidth="562.0" prefHeight="52.0" prefWidth="562.0" text="PLAYER" textFill="#fff568" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="359.0">
+         <font>
+            <Font name="Perpetua" size="41.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="359.0" layoutY="151.0" minWidth="562.0" prefHeight="52.0" prefWidth="562.0" text="DEALER" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="startButton" fitWidth="200.0" layoutX="83.0" layoutY="300.0" onMouseClicked="#btnStart" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="83.0">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hitButton" fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="380.0" onMouseClicked="#btnHit" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="standButton" fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="460.0" onMouseClicked="#btnStand" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="150.0" layoutY="313.0" style="-fx-opacity: 1;" text="START" textFill="#fff568" AnchorPane.leftAnchor="150.0">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="165.0" layoutY="393.0" style="-fx-opacity: 1;" text="HIT" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="148.0" layoutY="473.0" style="-fx-opacity: 1;" text="STAND" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="doubleButton" fitWidth="200.0" layoutX="997.0" layoutY="159.0" onMouseClicked="#btnDouble" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="83.0">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="1054.0" layoutY="172.0" style="-fx-opacity: 1;" text="DOUBLE" textFill="#fff568" AnchorPane.rightAnchor="140.0">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgJetonTen" fitHeight="100.0" fitWidth="100.0" layoutX="1047.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons/jeton10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgJetonFIfty" fitHeight="100.0" fitWidth="100.0" layoutX="1047.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons/jeton50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgJetonHundred" fitHeight="100.0" fitWidth="100.0" layoutX="1047.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/jetons/jeton100.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d14c1f" height="50.0" layoutX="998.0" layoutY="235.0" stroke="#9a291e" strokeType="INSIDE" strokeWidth="6.0" width="200.0" />
+      <Label layoutX="1011.0" layoutY="245.0" text="Bet:" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBet" layoutX="1066.0" layoutY="245.0" prefHeight="30.0" prefWidth="122.0" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="988.0" layoutY="325.0" onMouseClicked="#clickAddJeton10" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" disable="true" layoutX="992.0" layoutY="302.0" style="-fx-opacity: 1;" text="+" textAlignment="CENTER" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="988.0" layoutY="445.0" onMouseClicked="#clickAddJeton50" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="992.0" layoutY="422.0" style="-fx-opacity: 1;" text="+" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="988.0" layoutY="565.0" onMouseClicked="#clickAddJeton100" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="992.0" layoutY="542.0" style="-fx-opacity: 1;" text="+" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1156.0" layoutY="565.0" onMouseClicked="#clickRemoveJeton100" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="1169.0" layoutY="542.0" style="-fx-opacity: 1;" text="-" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1156.0" layoutY="445.0" onMouseClicked="#clickRemoveJeton50" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="1169.0" layoutY="422.0" style="-fx-opacity: 1;" text="-" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1156.0" layoutY="325.0" onMouseClicked="#clickRemoveJeton10" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn_toolbar.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="1169.0" layoutY="302.0" style="-fx-opacity: 1;" text="-" textFill="#ffd454">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="insuranceButton" fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="540.0" onMouseClicked="#btnInsurance" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="122.0" layoutY="553.0" style="-fx-opacity: 1;" text="INSURANCE" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgViewTutorial" fitHeight="720.0" fitWidth="1280.0" onMouseClicked="#nextTutorialImage" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.blackjack.controller.BlackjackEndViewController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="853.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/popup_background_480p.png" />
+         </image>
+      </ImageView>
+      
+      <Pane layoutX="131.0" layoutY="25.0" onMouseDragged="#onPaneDragged" onMousePressed="#onPanePressed" prefHeight="95.0" prefWidth="853.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d24e1f" height="50.0" layoutX="26.0" layoutY="28.0" stroke="#9a291e" strokeType="INSIDE" strokeWidth="6.0" width="380.0" />
+            <Label layoutX="39.0" layoutY="38.0" text="Balance:" textFill="#fff568">
+               <font>
+                  <Font name="Perpetua" size="24.0" />
+               </font></Label>
+            <Label fx:id="lblBalance" layoutX="122.0" layoutY="38.0" prefHeight="17.0" prefWidth="273.0" textFill="#fff568">
+               <font>
+                  <Font name="Perpetua" size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="84.0" fitWidth="50.0" layoutX="770.0" layoutY="29.0" onMouseClicked="#exit" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_toolbar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="50.0" layoutX="710.0" layoutY="29.0" onMouseClicked="#minimize" onMouseEntered="#highlightRoundButton" onMouseExited="#unHighlightRoundButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_toolbar.png" />
+               </image>
+            </ImageView>
+            <Label disable="true" layoutX="722.0" layoutY="6.0" prefHeight="88.0" prefWidth="9.0" style="-fx-opacity: 1;" text="-" textFill="#ffd454">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+            <Label disable="true" layoutX="783.0" layoutY="-10.0" prefHeight="119.0" prefWidth="44.0" style="-fx-opacity: 1;" text="x" textFill="#ffd454">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label fx:id="lblHeader" alignment="CENTER" layoutY="122.0" prefHeight="89.0" prefWidth="853.0" textAlignment="CENTER" textFill="#fff568" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Perpetua" size="54.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMSG" alignment="CENTER" layoutY="246.0" prefHeight="89.0" prefWidth="853.0" textAlignment="CENTER" textFill="#fff568" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Perpetua" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="273.0" layoutX="103.0" layoutY="371.0" onMouseClicked="#playAgain" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="147.0" layoutY="387.0" style="-fx-opacity: 1;" text="PLAY AGAIN" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="273.0" layoutX="463.0" layoutY="371.0" onMouseClicked="#exit" onMouseEntered="#highlightSquareButton" onMouseExited="#unHighlightSquareButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/btn2.png" />
+         </image>
+      </ImageView>
+      <Label disable="true" layoutX="564.0" layoutY="387.0" style="-fx-opacity: 1;" text="EXIT" textFill="#fff568">
+         <font>
+            <Font name="Perpetua" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
